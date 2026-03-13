@@ -21,4 +21,5 @@ def results():
     
     return render_template("results.html", movie=movie, movies=movies)
 
-app.run()
+if __name__ == "__main__":
+    app.run()
