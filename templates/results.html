@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <h1>🎬 Results for: {{ movie }}</h1>
+
+    {% for m in movies %}
+      <div class="movie-card">
+        {% if m.poster_path %}
+          <img src="https://image.tmdb.org/t/p/w200{{ m.poster_path }}" alt="{{ m.title }}">
+        {% endif %}
+        <div class="movie-info">
+          <h2>{{ m.title }}</h2>
+          <p>⭐ Rating: {{ m.vote_average }}</p>
+          <p>{{ m.overview }}</p>
+        </div>
+      </div>
+    {% endfor %}
+
+    <a href="/">Go back</a>
+  </body>
+</html>
