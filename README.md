@@ -19,6 +19,3 @@ A web app that lets you search for movies and see real results with posters and 
 3. Add your TMDB API key to app.py
 4. Run: `python3 app.py`
 5. Open your browser at: `http://127.0.0.1:5000`
-
-## Author
-Your Name — github.com/ahmedsaib9969
